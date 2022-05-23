@@ -25,4 +25,8 @@ public class TopControl : MonoBehaviour
         rg.AddForce(kuvvet*Hiz);
 
     }
+     void OnCollisionEnter(Collision cls)
+    {
+        Debug.Log(cls.gameObject.name);
+    }
 }
